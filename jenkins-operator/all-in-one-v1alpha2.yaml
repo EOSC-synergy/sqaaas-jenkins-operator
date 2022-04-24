@@ -232,7 +232,7 @@ spec:
   selector:
     matchLabels:
       control-plane: controller-manager
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
@@ -246,7 +246,7 @@ spec:
         - /manager
         args:
         - --leader-elect
-        image: virtuslab/jenkins-operator:v0.6.0
+        image: virtuslab/jenkins-operator:29c5b1e
         name: jenkins-operator
         imagePullPolicy: IfNotPresent
         securityContext:
