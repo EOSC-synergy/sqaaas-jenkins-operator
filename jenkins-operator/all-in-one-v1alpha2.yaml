@@ -246,7 +246,7 @@ spec:
         - /manager
         args:
         - --leader-elect
-        image: virtuslab/jenkins-operator:v0.7.1
+        image: nexusrepo.a.incd.pt:8083/virtuslab/jenkins-operator:v0.7.1
         name: jenkins-operator
         imagePullPolicy: IfNotPresent
         securityContext:
